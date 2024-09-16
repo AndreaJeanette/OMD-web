@@ -1,77 +1,283 @@
-.info_personal{
-    width: 100%;
-    height: 546px;
+.info_personal {
+  width: 100%;
+  height: 546px;
+  display: flex;
+  flex-direction: column;
 }
 
-.info_personal h2{
-    text-transform: uppercase;
+.info_personal h2 {
+  text-transform: uppercase;
 }
 
-.info_personal h2 span{
-    color: #D65886;
+.info_personal h2 span {
+  color: #d65886;
 }
 
-.info_general{
+.info_empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info_empresa h2 span {
+  color: #5dc1b9;
+}
+
+.titulo_empresa {
+  display: flex;
+  width: 70%;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+.info_general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.foto_perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 60px;
+  margin-left: 90px;
+  margin-top: -140px;
+  width: 300px;
+}
+
+.foto_perfil img {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 40px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.foto_perfil button {
+  width: 227px;
+  height: 32px;
+  background-color: #d65886;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.foto_perfil input::file-selector-button {
+  width: auto;
+  background-color: #d65886;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.foto_empresa input::file-selector-button {
+  width: auto;
+  background-color: #5dc1b9;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.info_perfil {
+  margin-left: 60px;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_perfil p {
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.info_perfil p span {
+  color: black;
+  font-weight: lighter;
+}
+
+.info_perfil input {
+  padding: 0 5px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.btn_editar {
+  width: 227px;
+  height: 32px;
+  background-color: #d65886;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.btn_editarEmpresa {
+  width: 227px;
+  height: 32px;
+  background-color: #5dc1b9;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_editar:hover {
+  color: white;
+}
+
+.btn_editarEmpresa:hover {
+  color: white;
+}
+
+.titulo_perfil {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.titulo_perfil button {
+  width: 196px;
+  height: 32px;
+  background-color: #d65886;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.borde {
+  height: 180px;
+  border-left: 3px solid black;
+}
+
+.verif {
+  display: flex;
+  justify-content: center;
+}
+
+.anuncio_verif {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: 1px 2px 52px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 52px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 52px -5px rgba(0, 0, 0, 0.75);
+}
+
+.spinner_padre {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border-left-color: #d65886;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.registroEmpresa {
+  background-color: #5dc1b9;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+.linkRegistroEmp {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.linkRegistroEmp:hover {
+  color: #f1ba0a;
+}
+
+@media (max-width: 768px) {
+  .titulo_perfil {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-.foto_perfil{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-right: 60px;
-    margin-left: 90px;
-}
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
-.foto_perfil button{
-    width: 227px;
-    height: 32px;
-    background-color: #D65886;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    margin-top: 30px;
-    font-size: 20px;
-}
+  .info_general {
+    display: flex;
+    flex-direction: column;
+  }
+  .borde {
+    display: none;
+  }
+  .foto_perfil {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 
-.info_perfil{
-    margin-left: 60px;
-    height: 343px;
-}
-
-.info_perfil p{
-    font-size: 25px;
-    color: #D65886;
-    font-weight: bolder;
-}
-
-.info_perfil p span{
-    color: black;
-    font-weight: lighter;
-}
-
-.info_perfil button{
-    width: 196px;
-    height: 32px;
-    background-color: #D65886;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 0;
-}
-
-.foto_perfil img{
-    width: 281px;
-    height: auto;
-}
-
-.borde{
-    height: 180px;
-    border-left: 3px solid black;
+  .info_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .info_perfil p {
+    text-align: center;
+  }
+  .titulo_empresa {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .titulo_empresa h2 {
+    text-align: center;
+  }
+  .foto_perfil input {
+    font-size: 15px;
+  }
 }
